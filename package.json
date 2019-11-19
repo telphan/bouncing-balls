@@ -8,7 +8,7 @@
 		"lint": "eslint .",
 		"prettify": "prettier --config .prettierrc.js --write \"{src,test}/**/*.js\"",
 		"watch": "webpack --watch",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "mocha --require babel-core/register"
 	},
 	"repository": {
 		"type": "git",
@@ -26,6 +26,9 @@
 	"homepage": "https://github.com/telphan/bouncing-balls#readme",
 	"devDependencies": {
 		"@webpack-contrib/eslint-config-webpack": "^3.0.0",
+		"babel-core": "^6.26.3",
+		"babel-preset-es2015": "^6.24.1",
+		"chai": "^4.2.0",
 		"css-loader": "^3.2.0",
 		"eslint": "^6.6.0",
 		"eslint-config-prettier": "^6.7.0",
@@ -33,8 +36,10 @@
 		"eslint-plugin-import": "^2.18.2",
 		"husky": "^3.1.0",
 		"lint-staged": "^9.4.3",
+		"mocha": "^6.2.2",
 		"prettier": "^1.19.1",
 		"prettier-loader": "^3.3.0",
+		"sinon": "^7.5.0",
 		"style-loader": "^1.0.0",
 		"webpack": "^4.41.2",
 		"webpack-cli": "^3.3.10"
