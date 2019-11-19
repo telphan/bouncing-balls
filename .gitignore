@@ -1,2 +1,3 @@
 node_modules
 dist/main.js
+.nyc_output/
