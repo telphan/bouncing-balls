@@ -1,0 +1,47 @@
+{
+	"name": "bouncing-balls",
+	"version": "0.0.1",
+	"description": "A little bouncing game with no aim",
+	"main": "index.js",
+	"scripts": {
+		"build": "webpack",
+		"lint": "eslint .",
+		"prettify": "prettier --config .prettierrc.js --write \"{src,test}/**/*.js\"",
+		"watch": "webpack --watch",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/telphan/bouncing-balls.git"
+	},
+	"keywords": [
+		"balls",
+		"bouncing"
+	],
+	"author": "Theodor Gherzan",
+	"license": "Apache-2.0",
+	"bugs": {
+		"url": "https://github.com/telphan/bouncing-balls/issues"
+	},
+	"homepage": "https://github.com/telphan/bouncing-balls#readme",
+	"devDependencies": {
+		"@webpack-contrib/eslint-config-webpack": "^3.0.0",
+		"css-loader": "^3.2.0",
+		"eslint": "^6.6.0",
+		"eslint-config-prettier": "^6.7.0",
+		"eslint-loader": "^3.0.2",
+		"eslint-plugin-import": "^2.18.2",
+		"husky": "^3.1.0",
+		"lint-staged": "^9.4.3",
+		"prettier": "^1.19.1",
+		"prettier-loader": "^3.3.0",
+		"style-loader": "^1.0.0",
+		"webpack": "^4.41.2",
+		"webpack-cli": "^3.3.10"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	}
+}
